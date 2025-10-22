@@ -1,158 +1,52 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+.learnmore {
+  text-align: left;
+  max-width: 1100px;
+  margin: auto;
 }
 
-body {
-  background: #fafaf7;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Header and Navigation */
-header {
-  background: #2c5530;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 5%;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-  color: #ffcc00;
-}
-
-/* Hero Section */
-.hero {
-  height: 85vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-
-.hero-text {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 40px;
+.farm-image {
+  width: 100%;
   border-radius: 10px;
+  margin: 20px 0;
 }
 
-.hero button {
-  background: #ffcc00;
-  color: #2c5530;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  margin-top: 15px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-/* Content */
-.content, .services, .gallery, .contact {
-  padding: 40px 10%;
-  text-align: center;
-}
-
-/* Services */
-.service-grid {
+.duck-breeds {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin-top: 20px;
   justify-content: center;
 }
 
-.service-card {
+.duck-card {
   background: white;
   border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 320px;
   padding: 15px;
-  width: 300px;
-}
-
-.service-card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-/* Gallery */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.gallery-grid img {
-  width: 100%;
-  border-radius: 10px;
+  text-align: center;
   transition: transform 0.3s ease;
 }
 
-.gallery-grid img:hover {
-  transform: scale(1.05);
+.duck-card:hover {
+  transform: translateY(-5px);
 }
 
-/* Contact */
-form {
-  max-width: 600px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.duck-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
 }
 
-input, textarea, button {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.duck-card h4 {
+  color: #2c5530;
+  margin-top: 10px;
 }
 
-button {
-  background: #2c5530;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background: #1f3e22;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  background: #2c5530;
-  color: white;
-  padding: 15px;
-  margin-top: 40px;
+.duck-card ul {
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 0.9em;
 }
