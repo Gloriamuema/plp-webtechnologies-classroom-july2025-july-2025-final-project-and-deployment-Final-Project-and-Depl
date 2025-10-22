@@ -1,22 +1,20 @@
-// Toggle mobile menu
-const menuBtn = document.getElementById("menuToggle");
-const mobileMenu = document.getElementById("mobileMenu");
-
-if (menuBtn) {
-  menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-    mobileMenu.classList.toggle("animate__fadeInDown");
-  });
+function animateWelcome() {
+  alert("Welcome to Levites Farm! Explore our healthy ducks and services.");
 }
 
-// Learn More button interaction
-const learnBtn = document.getElementById("learnMore");
-if (learnBtn) {
-  learnBtn.addEventListener("click", () => {
-    learnBtn.classList.add("animate__bounce");
-    setTimeout(() => {
-      learnBtn.classList.remove("animate__bounce");
-      window.location.href = "about.html";
-    }, 800);
-  });
+function validateForm() {
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+  const feedback = document.getElementById('feedback');
+
+  if (!name || !email || !message) {
+    feedback.textContent = "Please fill in all fields.";
+    feedback.style.color = "red";
+    return false;
+  }
+
+  feedback.textContent = "Thank you! Your message has been sent.";
+  feedback.style.color = "green";
+  return false;
 }

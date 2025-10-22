@@ -1,58 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GreenFeather Duck Farm</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <script defer src="js/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levites Farm | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-green-50 text-gray-800 font-sans">
-
-  <!-- Navbar -->
-  <header class="bg-green-700 text-white fixed top-0 left-0 w-full z-50 shadow-lg">
-    <nav class="container mx-auto flex justify-between items-center p-4">
-      <a href="index.html" class="text-2xl font-bold tracking-wide">🦆 GreenFeather</a>
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
-        <li><a href="services.html" class="hover:text-yellow-300">Services</a></li>
-        <li><a href="gallery.html" class="hover:text-yellow-300">Gallery</a></li>
-        <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+<body>
+  <header>
+    <div class="logo">Levites Farm</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-      <button id="menuToggle" class="md:hidden text-2xl">☰</button>
     </nav>
-    <ul id="mobileMenu" class="hidden bg-green-800 md:hidden text-center py-3 space-y-2">
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
   </header>
 
-  <!-- Hero Section -->
-  <section class="pt-24 text-center bg-cover bg-center h-[80vh]" style="background-image:url('images/duck-farm.jpg');">
-    <div class="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-white animate__animated animate__fadeIn">
-      <h1 class="text-5xl font-bold mb-4 animate__animated animate__fadeInDown">Welcome to GreenFeather Duck Farm</h1>
-      <p class="text-xl mb-6 animate__animated animate__fadeInUp">Sustainable duck farming with love and care 🐣</p>
-      <button id="learnMore" class="bg-yellow-400 text-green-800 font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 transition transform hover:scale-105">
-        Learn More
-      </button>
+  <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1615198759968-7f52c4dbf06e?auto=format&fit=crop&w=1600&q=80');">
+    <div class="hero-text">
+      <h1>Welcome to Levites Farm</h1>
+      <p>Raising happy, healthy ducks the natural way.</p>
+      <button onclick="animateWelcome()">Explore More</button>
     </div>
   </section>
 
-  <!-- About Intro -->
-  <section class="container mx-auto my-16 text-center">
-    <h2 class="text-3xl font-semibold mb-4 text-green-700">Why Choose Our Farm?</h2>
-    <p class="max-w-2xl mx-auto text-lg leading-relaxed">
-      We raise our ducks naturally, ensuring healthy, happy birds and fresh, organic products for families and businesses alike.
-    </p>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-green-700 text-white text-center py-4">
-    <p>&copy; 2025 GreenFeather Duck Farm | All Rights Reserved</p>
+  <footer>
+    <p>© 2025 Levites Farm | All Rights Reserved</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
